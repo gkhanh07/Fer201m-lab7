@@ -6,7 +6,7 @@ import Home from './component/Home';
 import AddUser from './component/AddUser';
 import { jwtDecode } from 'jwt-decode';
 import { useEffect, useState } from 'react';
-
+import UpdateUser from './component/UpdateUser';
 function App() {
     const [ user, setUser ] = useState({});
   function handleCredentialResponse (response)   {
@@ -46,6 +46,7 @@ useEffect(() => {
       <Routes>
          <Route path='/' element={<Home />}></Route>
         <Route path='/addUser' element={<AddUser />}/>
+        <Route path='/updateUser/:id' element={<UpdateUser />}/>
          
       </Routes>
      

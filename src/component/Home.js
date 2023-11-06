@@ -109,7 +109,7 @@ export default function Home() {
                   <Stack direction="row" spacing={3}>
                   
                      
-                     <Link to= {`/updateStaff/${user.id}`}>
+                     <Link to= {`/updateUser/${user.id}`}>
                      <IconButton><Icon><EditIcon /></Icon></IconButton>
                      </Link>
                   
